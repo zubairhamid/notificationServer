@@ -1,0 +1,32 @@
+{
+  "name": "notification",
+  "version": "0.0.1",
+  "description": "notification Application",
+  "license": "ISC",
+  "dependencies": {
+    "@cloudmpower/apiloader": "*",
+    "@cloudmpower/databasemanager": "*",
+    "@cloudmpower/dbabstraction": "*",
+    "@cloudmpower/emailgenerator": "*",
+    "@cloudmpower/globaldb": "*",
+    "@cloudmpower/interactor": "*",
+    "@cloudmpower/methodextender": "*",
+    "@cloudmpower/modelextender": "*",
+    "@cloudmpower/responsehandler": "*",
+    "@cloudmpower/router": "*",
+    "@cloudmpower/serverblocker": "*",
+    "@cloudmpower/serverconfig": "*",
+    "@cloudmpower/session": "*",
+    "@cloudmpower/utils": "*",
+    "fcm-push": "1.0.5",
+    "koa": "*",
+    "koa-body": "*",
+    "koa-routing": "*",
+    "koa-scheme": "*",
+    "koa-send": "*",
+    "later": "*",
+    "lodash": "*",
+    "moment": "*",
+    "time-uuid": "*"
+  }
+}

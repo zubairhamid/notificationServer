@@ -1,0 +1,162 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Notification Server API",
+    "version": "0.0.1"
+  },
+  "paths": {
+    "/notification/integrate/dummy": {
+      "post": {
+        "tags": ["/notification/integrate/dummy"],
+        "summary": "Server Dummy integration Call",
+        "in": "body",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {}
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "properties": {
+              "message": {
+                "type": "string"
+              }
+            }
+          },
+          "400": {
+            "properties": {
+              "message": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/notification/setting/add": {
+      "post": {
+        "tags": ["/notification/setting/add"],
+        "summary": "Notification Server setting add",
+        "in": "body",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "externalId": {
+                  "type": "string"
+                },
+                "notificationActive": {
+                  "type": "boolean"
+                },
+                "fcmNotification": {
+                  "type": "object",
+                  "properties": {
+                    "isRegistered": {
+                      "type": "boolean"
+                    },
+                    "notificationDeviceType": {
+                      "type": "string"
+                    },
+                    "notificationDeviceName": {
+                      "type": "string"
+                    },
+                    "projectId": {
+                      "type": "string"
+                    },
+                    "registrationId": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "properties": {
+              "message": {
+                "type": "string"
+              }
+            }
+          },
+          "400": {
+            "properties": {
+              "message": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/notification/setting/update": {
+      "post": {
+        "tags": ["/notification/setting/update"],
+        "summary": "Notification Server setting update",
+        "in": "body",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "externalId": {
+                  "type": "string"
+                },
+                "notificationActive": {
+                  "type": "boolean"
+                },
+                "fcmNotification": {
+                  "type": "object",
+                  "properties": {
+                    "isRegistered": {
+                      "type": "boolean"
+                    },
+                    "notificationDeviceType": {
+                      "type": "string"
+                    },
+                    "notificationDeviceName": {
+                      "type": "string"
+                    },
+                    "projectId": {
+                      "type": "string"
+                    },
+                    "registrationId": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "properties": {
+              "message": {
+                "type": "string"
+              }
+            }
+          },
+          "400": {
+            "properties": {
+              "message": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

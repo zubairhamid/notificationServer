@@ -1,0 +1,42 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Notification Server API",
+    "version": "0.0.1"
+  },
+  "paths": {
+    "/notification/integrate/dummy": {
+      "post": {
+        "tags": ["/notification/integrate/dummy"],
+        "summary": "notification Server Dummy integration Call",
+        "in": "body",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {}
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "properties": {
+              "message": {
+                "type": "string"
+              }
+            }
+          },
+          "400": {
+            "properties": {
+              "message": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

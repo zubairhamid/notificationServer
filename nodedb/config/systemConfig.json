@@ -1,0 +1,25 @@
+{
+  "databaseName"            : "notification",
+  "databaseModelPath"       : "./nodedb/databases/dbModel/models",
+  "databaseIP"              : "127.0.0.1",
+  "databasePort"            : "27017",
+  "serviceTo"               : "notification",
+  "setLang"                 : "EN",
+  "fcmServerKey"            : "EN",
+  "sessionTimedOut"         : 120,
+  "mailerSetting"           : {
+    "apiKey"                  : "key-5acc930347bdaeb1e7fc19c72184d6b7",
+    "domainName"              : "cloudmpower.com",
+    "fromEmail"               : "info@cloudmpower.com"
+  },
+  "jollywellAdminServerConfig"       : {
+    "hostname"                : "127.0.0.1",
+    "port"                    : "6111",
+    "path"                    : "/admin/integrate/dummy",
+    "method"                  : "POST",
+    "headers"                 : {
+      "Content-Type"            : "application/json",
+      "x-auth-server"           : true
+    }
+  }
+}
