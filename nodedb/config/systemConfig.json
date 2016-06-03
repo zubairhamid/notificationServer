@@ -5,7 +5,7 @@
   "databasePort"            : "27017",
   "serviceTo"               : "notification",
   "setLang"                 : "EN",
-  "fcmServerKey"            : "EN",
+  "fcmServerKey"            : "AIzaSyDlJa6qxak6xLV95qfMqeQ5WGUb4Y66qN4",
   "sessionTimedOut"         : 120,
   "mailerSetting"           : {
     "apiKey"                  : "key-5acc930347bdaeb1e7fc19c72184d6b7",
